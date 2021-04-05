@@ -2,21 +2,39 @@
 A plugin which creates a cookie if it doesn't exist else displays the cookie's Date Time (microseconds) in a popup.
 
 ## Installation:
-You may download the zip file and install it using Joomla's admin panel module installation page by the file upload.
+<ul>
+  <li> Download the zip file </li>
+  <li> Visit Joomla Administration Panel of your website </li>
+  <li> Go to the plugin installation page (Found under system settings) </li>
+  <li> Upload the zip file </li>
+</ul>
 
-## Plugin Description:
-Type: <b> System </b> <br/>
-Events Used: <b> onBeforeRender </b> <br/>
-Follows Joomla Coding Standards: <b> Yes </b> <br/>
-Gives any error on phpcs sniffer warnings: <b> No </b> <br/>
+## Plugin Specifications:
+- Type: <b> System </b> <br/>
+- Events Used: <b> onBeforeRender </b> <br/>
+The reason behind selecting onBeforeRender instead of any other event was because the plugin requires WebAssets API to load JavaScript and CSS files which will generate the modal and the best time to load these files and set Cookies would be just before the page is about to be rendered.<br/>
+- Follows Joomla Coding Standards: <b> Yes </b> <br/>
+- Gives any error on phpcs sniffer warnings: <b> No </b> <br/>
+
+## Plugin Folder Structure
+
+    ├── language
+    │   └── en-GB.plg_system_yvcookies.ini
+    ├── js
+    │   └── script.js
+    ├── css
+    │   └── style.css
+    └── yvcookies.php
+    └── yvcookies.xml
 
 
-## Before a Cookie is set
+## Expected Output/Behaviour:
+### 1. Before a Cookie is set
 ![Cookie unset](/gif/Joomla1.gif)
 
 As you may observe, the browser's Cookie storage didn't have a Cookie named Custom_Cookie_GSoC (the name is fetched as params from the Plugin XML form) so on reload, there was no popup but the Cookie was set
 
-## After a Cookie is set
+### 2. After a Cookie is set
 ![Cookie unset](/gif/Joomla2.gif)
 
 After we set the Cookie, the browser displays a modal which is styled and scripted by custom files and doesn't depend on any external dependancy
