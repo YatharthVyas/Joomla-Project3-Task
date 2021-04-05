@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4" type="plugin" group="system" method="upgrade">
+	<name>yv_cookies</name>
+	<author>Yatharth Vyas</author>
+	<creationDate>April 2021</creationDate>
+	<authorEmail>yatharth2000.vyas@gmail.com</authorEmail>
+	<authorUrl>https://github.com/YatharthVyas</authorUrl>
+	<version>1.0.0</version>
+	<description>A Cookie Manager Plugin designed for GSoC by Yatharth Vyas</description>
+	<files>
+		<filename plugin="yvcookies">yvcookies.php</filename>
+	</files>
+	<media folder="media" destination="plg_system_yvcookies">
+		<folder>css</folder>
+		<folder>js</folder>	
+	</media>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_system_yvcookies.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="yv_cookie_name"
+					type="text"
+					label="YV_COOKIES_NAME"
+					default="Cookie Name"
+				/>
+				<field
+					name="yv_cookie_expiry_time"
+					type="number"
+					label="YV_COOKIES_EXPIRY_TIME"
+					default="3600"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
