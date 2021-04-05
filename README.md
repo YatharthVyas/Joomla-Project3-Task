@@ -2,12 +2,12 @@
 A plugin which creates a cookie if it doesn't exist else displays the cookie's Date Time (microseconds) in a popup.
 
 ## Installation:
-<ul>
+<ol>
   <li> Download the zip file </li>
   <li> Visit Joomla Administration Panel of your website </li>
   <li> Go to the plugin installation page (Found under system settings) </li>
   <li> Upload the zip file </li>
-</ul>
+</ol>
 
 ## Plugin Specifications:
 - Type: <b> System </b> <br/>
