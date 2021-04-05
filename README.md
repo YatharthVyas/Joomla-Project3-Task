@@ -30,11 +30,17 @@ The reason behind selecting onBeforeRender instead of any other event was becaus
 
 ## Expected Output/Behaviour:
 ### 1. Before a Cookie is set
+
+Note: Page is beind reloaded in the gif
+
 ![Cookie unset](/gif/Joomla1.gif)
 
 As you may observe, the browser's Cookie storage didn't have a Cookie named Custom_Cookie_GSoC (the name is fetched as params from the Plugin XML form) so on reload, there was no popup but the Cookie was set
 
 ### 2. After a Cookie is set
+
+Note: Page is beind reloaded in the gif
+
 ![Cookie unset](/gif/Joomla2.gif)
 
 After we set the Cookie, the browser displays a modal which is styled and scripted by custom files and doesn't depend on any external dependancy
