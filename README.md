@@ -29,6 +29,9 @@ The reason behind selecting onBeforeRender instead of any other event was becaus
     └── yvcookies.xml
 
 
+## Process Flowchart:
+<img src="https://github.com/YatharthVyas/Joomla-Project3-Task/blob/main/gif/Flowchart.png" height="600" alt="Flowchart image: https://github.com/YatharthVyas/Joomla-Project3-Task/blob/main/gif/Flowchart.png"/>
+
 ## Expected Output/Behaviour:
 ### 1. Before a Cookie is set
 
@@ -42,6 +45,6 @@ As you may observe, the browser's Cookie storage didn't have a Cookie named Cust
 
 Note: Page is beind reloaded in the gif
 
-![Cookie unset](/gif/Joomla2.gif)
+![Cookie set](/gif/Joomla2.gif)
 
 After we set the Cookie, the browser displays a modal which is styled and scripted by custom files and doesn't depend on any external dependancy
