@@ -14,6 +14,7 @@ A plugin which creates a cookie if it doesn't exist else displays the cookie's D
 - Events Used: <b> onBeforeRender </b> <br/>
 The reason behind selecting onBeforeRender instead of any other event was because the plugin requires WebAssets API to load JavaScript and CSS files which will generate the modal and the best time to load these files and set Cookies would be just before the page is about to be rendered.<br/>
 - Follows Joomla Coding Standards: <b> Yes </b> <br/>
+- Follows Joomla Naming Conventions: <b> Yes </b> <br/>
 - Gives any error on phpcs sniffer warnings: <b> No </b> <br/>
 
 ## Plugin Folder Structure
