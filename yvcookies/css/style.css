@@ -45,3 +45,8 @@
 	text-decoration: none;
 	cursor: pointer;
 }
+
+/* To hide the modal */
+.hide {
+	display: none;
+}
