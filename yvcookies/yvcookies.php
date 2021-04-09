@@ -53,17 +53,16 @@ class PlgSystemYVCookies extends CMSPlugin
 		if ($cookieValue)
 		{
 			// Add the Modal HTML
-			echo '
-			<div id="yvcookie-modal" class="yvcookie-modal">
-				<div class="yvcookie-modal-content">
-					<span class="yvcookie-close">&times;</span>
-					<h4> YV Cookie Manager Plugin </h4>
-					<hr/>
-					Cookie Name: ' . $cookieName . '<br/>
-					Cookie Value (DateTime in microseconds): ' . $cookieValue . '<br/>
-				</div>
-			</div>
-			';
+			$modal = '<div id="yvcookie-modal" class="yvcookie-modal">';
+			$modal .= '<div class="yvcookie-modal-content">';
+			$modal .= '<span class="yvcookie-close">&times;</span>';
+			$modal .= '<h4> YV Cookie Manager Plugin </h4>';
+			$modal .= '<hr/>';
+			$modal .= 'Cookie Name: ' . $cookieName . '<br/>';
+			$modal .= 'Cookie Value (DateTime in microseconds): ' . $cookieValue . '<br/>';
+			$modal .= '</div>';
+			$modal .= '</div>';
+			echo $modal;
 
 			// Load JavaScript
 			$this->app->getDocument()->getWebAssetManager()
