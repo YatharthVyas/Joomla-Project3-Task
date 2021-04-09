@@ -52,7 +52,7 @@ class PlgSystemYVCookies extends CMSPlugin
 
 		if ($cookieValue)
 		{
-			// Add the Modal HTML
+			// Add the Modal HTML (Note: I believe this has to be done in a different manner. Waiting for Mentor's response)
 			$modal = '<div id="yvcookie-modal" class="yvcookie-modal">';
 			$modal .= '<div class="yvcookie-modal-content">';
 			$modal .= '<span class="yvcookie-close">&times;</span>';
