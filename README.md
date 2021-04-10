@@ -1,6 +1,10 @@
 # Joomla-Project3-Task
 A plugin which creates a cookie if it doesn't exist else displays the cookie's Date Time (microseconds) in a popup.
 
+## Possible Improvements:
+- Add HTML using Joomla's HTMLHelper functions (unable to figure out which one is compatible with J4)
+- Use Bootstrap 4 classes for modal to reduce the excess files and take advantage of the pre-existing bootstrap styles
+
 ## Installation:
 <ol>
   <li> Download the zip file </li>
